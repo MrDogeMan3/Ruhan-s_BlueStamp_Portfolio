@@ -9,7 +9,7 @@ You should comment out all portions of your portfolio that you have not complete
 
 | **Engineer** | **School** | **Areas of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
-| Ruhan D. | Amador Valley | Buisness/CS | Incoming Sophmore
+| Ruhan D. | Amador Valley | Buisness/CS | Rising Sophmore
 
 **Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
 
@@ -88,7 +88,7 @@ I decided to make the Mini Retro Arcade Game(MRAG) for the starter project. The 
 # Challenges
 While making my starter project I faced my fair share of problems the biggest challenges that had become aparent after starting was learning how to solder considering the fact that I had never learnt how to solder after learning the basics and a couple desolders I was able to adapt a decent method to solder easily after I was able to solder properly I soon ran into my next obstacle, which involved the instructions, unfortunatly for me I had trouble with the instuctions leading to some small issues with the screws and batteries. The last big struggle for the starter project was with the acrylic case which for my short nails to longer than I would like to admit to peel of the protective layer.
 
-![Headstone Image](logo.svg)
+![Headstone Image](IMG_5093.heic)
 
 # Other Resources/Examples
 One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
