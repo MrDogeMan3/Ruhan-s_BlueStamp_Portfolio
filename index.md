@@ -82,6 +82,14 @@ Don't forget to place the link of where to buy each component inside the quotati
 | Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 | Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 
+# My Starter Project
+I decided to make the Mini Retro Arcade Game(MRAG) for the starter project. The MRAG has five unique games: 1. Tetris, 2. Snake, 3. Space encounters, 4. Space Invaders, and 5. Slot Machine. These five games can easily controlled by six easy buttons: up, down, left, right, return(exit the game), and fire(shooting for space invaders). If you are having trouble beating the game you're playing, no problem; with the other two buttons, you can easily choose any of the four remaining games in the convenience of being in your pocket.
+
+# Challenges
+While making my starter project I faced my fair share of problems the biggest challenges that had become aparent after starting was learning how to solder considering the fact that I had never learnt how to solder after learning the basics and a couple desolders I was able to adapt a decent method to solder easily after I was able to solder properly I soon ran into my next obstacle, which involved the instructions, unfortunatly for me I had trouble with the instuctions leading to some small issues with the screws and batteries. The last big struggle for the starter project was with the acrylic case which for my short nails to longer than I would like to admit to peel of the protective layer.
+
+![Headstone Image](logo.svg)
+
 # Other Resources/Examples
 One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
 - [Example 1](https://trashytuber.github.io/YimingJiaBlueStamp/)
