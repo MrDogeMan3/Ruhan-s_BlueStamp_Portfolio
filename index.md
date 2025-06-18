@@ -11,7 +11,7 @@ You should comment out all portions of your portfolio that you have not complete
 |:--:|:--:|:--:|:--:|
 | Ruhan D. | Amador Valley | Buisness/CS | Rising Sophmore
 
-<img src="IMG_5093.jpg" width="300" height="400">
+<img src="IMG_5093.jpg" width="500" height="600">
 
 # Final Milestone
 
