@@ -7,9 +7,9 @@ You should comment out all portions of your portfolio that you have not complete
 <!--- Anything between these symbols will not render on the published site -->
 ```
 
-| **Engineer** | **School** | **Areas of Interest** | **Grade** |
-|:--:|:--:|:--:|:--:|
-| Ruhan D. | Amador Valley | Buisness/CS | Rising Sophmore
+                 | **Engineer** | **School** | **Areas of Interest** | **Grade** |
+                 |:--:|:--:|:--:|:--:|
+                 | Ruhan D. | Amador Valley | Buisness/CS | Rising Sophmore
 
 <img src="IMG_5093.jpg" width="800" height="1000">
 
