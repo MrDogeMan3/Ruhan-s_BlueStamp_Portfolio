@@ -7,9 +7,9 @@ You should comment out all portions of your portfolio that you have not complete
 <!--- Anything between these symbols will not render on the published site -->
 ```
 
-                 | **Engineer** | **School** | **Areas of Interest** | **Grade** |
-                 |:--:|:--:|:--:|:--:|
-                 | Ruhan D. | Amador Valley | Buisness/CS | Rising Sophmore
+  | **Engineer** | **School** | **Areas of Interest** | **Grade** |
+  |:--:|:--:|:--:
+  | Ruhan D. | Amador Valley | Buisness/CS | Rising Sophmore
 
 <img src="IMG_5093.jpg" width="800" height="1000">
 
@@ -76,8 +76,8 @@ Don't forget to place the link of where to buy each component inside the quotati
 
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+| Uno R3 | This item is the microcontroller for my project  | $16.99 | <a href="mv6OIH9LIr_WhUFObq______AAAAAQAAAAAAAAAAAAAAAQAAABsO4OlFpYZdU0RQREc7wYUia4w9wmYhLc9jf18iHhFI_SLj9IFUyDZpMdzg"> Link </a> |
+| 9g Micro Servo | The 9g Micro Servo is used for precise movements for moving the cardboard piece of my project | $3.50 | <a href="(https://www.dfrobot.com/product-255.html)"> Link </a> |
 | Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 
 # My Starter Project - Retro Arcade Console
