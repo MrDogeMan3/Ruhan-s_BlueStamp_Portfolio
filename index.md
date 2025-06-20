@@ -82,6 +82,7 @@ Don't forget to place the link of where to buy each component inside the quotati
 | Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 
 # My Starter Project - Retro Arcade Console
+<iframe width="560" height="315" src="https://youtu.be/js7R6Dc6IFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 I decided to make the Retro Arcade Console(RAC) for the starter project. The RAC has five unique games: 1. Tetris, 2. Snake, 3. Space encounters, 4. Space Invaders, and 5. Slot Machine. These five games can easily controlled by six easy buttons: up, down, left, right, return(exit the game), and fire(shooting for space invaders). If you are having trouble beating the game you're playing, no problem; with the other two buttons, you can easily choose any of the four remaining games in the convenience of being in your pocket.
 
 # Challenges
