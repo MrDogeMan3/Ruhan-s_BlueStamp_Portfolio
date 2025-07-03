@@ -2,11 +2,6 @@
 Leaving your pet at home for an extended period can be stressful especially when it comes to your feeding your furry friends. This simple system yet effective system provides a solution by automatically dispensing food at scheduled intervals, keeping your pet well-fed and happy no matter where you are. It’s a very practical and affordable way to give your pet the care they need even without you being there.
 
 
-You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
-```HTML
-<!--- This is an HTML comment in Markdown -->
-<!--- Anything between these symbols will not render on the published site -->
-```
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
 | Ruhan D | Amador Valley | Buisness/CS | Rising Sophmore
