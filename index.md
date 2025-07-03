@@ -9,7 +9,7 @@ You should comment out all portions of your portfolio that you have not complete
 ```
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
-| Ruhan D. | Amador Valley | Buisness/CS | Rising Sophomore
+| Ruhan D | Amador Valley | Buisness/CS | Rising Sophmore
 
 <div style="text-align: center;">
   <img src="IMG_5093.jpg" width="400" height="500">
