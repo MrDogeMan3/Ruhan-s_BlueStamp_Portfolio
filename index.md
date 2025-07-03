@@ -1,5 +1,6 @@
 # Automatic Pet Feeder
-Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
+Leaving your pet at home for an extended period can be stressful especially when it comes to your feeding your furry friends. This simple system yet effective system provides a solution by automatically dispensing food at scheduled intervals, keeping your pet well-fed and happy no matter where you are. It’s a very practical and affordable way to give your pet the care they need even without you being there.
+
 
 You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
 ```HTML
