@@ -102,7 +102,7 @@ Don't forget to place the link of where to buy each component inside the quotati
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
 | Uno R3 | This item is the microcontroller for my project  | $16.99 | <a href="mv6OIH9LIr_WhUFObq______AAAAAQAAAAAAAAAAAAAAAQAAABsO4OlFpYZdU0RQREc7wYUia4w9wmYhLc9jf18iHhFI_SLj9IFUyDZpMdzg"> Link </a> |
-| 9g Micro Servo | The 9g Micro Servo is used for precise movements for moving the cardboard piece of my project | $3.50 | <a href="(https://www.dfrobot.com/product-255.html)"> Link </a> |
+| 9g Micro Servo | The 9g Micro Servo is used for precise movements for moving the cardboard piece of my project | $3.50 | <a href="https://www.dfrobot.com/product-255.html"> Link </a> |
 | Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 
 # My Starter Project - Retro Arcade Console
