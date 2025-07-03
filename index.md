@@ -6,10 +6,11 @@ You should comment out all portions of your portfolio that you have not complete
 <!--- This is an HTML comment in Markdown -->
 <!--- Anything between these symbols will not render on the published site -->
 ```
-
+<div style="text-align: center;">
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
 | Ruhan D. | Amador Valley | Buisness/CS | Rising Sophomore
+</div>
 
 <div style="text-align: center;">
   <img src="IMG_5093.jpg" width="400" height="500">
