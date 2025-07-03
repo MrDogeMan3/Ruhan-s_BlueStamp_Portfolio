@@ -105,7 +105,7 @@ Don't forget to place the link of where to buy each component inside the quotati
 | 9g Micro Servo | The 9g Micro Servo is used for precise movements for moving the cardboard piece of my project | $3.50 | <a href="https://www.dfrobot.com/product-255.html"> Link </a> |
 | 1/2 in. x 3 in. x 3 ft. S4S Poplar Board | Holding Hardware Setup together | $4.98 | <a href="https://www.homedepot.com/p/Weaber-1-2-in-x-3-in-x-3-ft-S4S-Poplar-Board-27365/207058986#overlay"> Link </a> |
 | Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+| Total Price | --Not Including Tax-- | $25.47 | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 
 # My Starter Project - Retro Arcade Console
 <iframe width="560" height="315" src="https://www.youtube.com/embed/js7R6Dc6IFs?si=QcVjojFgPuVrgVKV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
