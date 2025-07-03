@@ -1,10 +1,27 @@
 # Automatic Pet Feeder
 Leaving your pet at home for an extended period can be stressful especially when it comes to your feeding your furry friends. This simple system yet effective system provides a solution by automatically dispensing food at scheduled intervals, keeping your pet well-fed and happy no matter where you are. It’s a very practical and affordable way to give your pet the care they need even without you being there.
 
+<div style="text-align: center;">
+  <table style="margin: 0 auto;">
+    <thead>
+      <tr>
+        <th>Engineer</th>
+        <th>School</th>
+        <th>Area of Interest</th>
+        <th>Grade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Ruhan D</td>
+        <td>Amador Valley</td>
+        <td>Buisness/CS</td>
+        <td>Rising Sophomore</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-| **Engineer** | **School** | **Area of Interest** | **Grade** |
-|:--:|:--:|:--:|:--:|
-| Ruhan D | Amador Valley | Buisness/CS | Rising Sophmore
 
 <div style="text-align: center;">
   <img src="IMG_5093.jpg" width="400" height="500">
