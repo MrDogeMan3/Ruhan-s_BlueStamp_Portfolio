@@ -59,11 +59,9 @@ For your second milestone, explain what you've worked on since your previous mil
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VYfw38KZGkk?si=vkkNii-y88ocAph8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-For your first milestone, describe what your project is and how you plan to build it. You can include:
-- An explanation about the different components of your project and how they will all integrate together
-- Technical progress you've made so far
-- Challenges you're facing and solving in your future milestones
-- What your plan is to complete your project
+When I first decided to build an automatic pet feeder, I knew what I wanted it to do: feed my pet when my family and I weren't around. Then I had to figure out how to keep track of time so it would feed at the right moment. At first, I tried using something interrupts at first I used TIMER0_COMPA_vect and made it run a bit of code every second to keep track of time at first it was working but then it started to turn unrealiable by sometimes overheating and not moving when supposed to. After a bit of trial and error, I found out that using millis() (a built-in timer) inside an interrupt wasn't the best idea because they both use the same system. So I decided to just used millis() inside the loop() instead. It was way easier and everything started working smoothly with no interuptions. Now my code just waits, checks if enough time has passed, and activates servo, and resets the timer.
+
+
 
 # Schematics 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
