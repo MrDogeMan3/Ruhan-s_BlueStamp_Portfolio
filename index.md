@@ -28,30 +28,6 @@ Leaving your pet at home for an extended period can be stressful especially when
   <img src="IMG_5093.jpg" width="400" height="500">
 </div>
 
-# Final Milestone
-
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
-
-
-
-For your final milestone, explain the outcome of your project. Key details to include are:
-- What you've accomplished since your previous milestone
-- What your biggest challenges and triumphs were at BSE
-- A summary of key topics you learned about
-- What you hope to learn in the future after everything you've learned at BSE
-
-
-
-# Second Milestone
-
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
-
-
-For your second milestone, explain what you've worked on since your previous milestone. You can highlight:
-- Technical details of what you've accomplished and how they contribute to the final goal
-- What has been surprising about the project so far
-- Previous challenges you faced that you overcame
-- What needs to be completed before your final milestone 
 
 # First Milestone
 
@@ -70,15 +46,52 @@ Here's where you'll put images of your schematics. [Tinkercad](https://www.tinke
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
 
 ```c++
+#include <Servo.h>
+
+#define FEED_INTERVAL_MINUTES 5
+const byte servoPin = 9;
+const unsigned long FEED_INTERVAL = FEED_INTERVAL_MINUTES * 60UL * 1000UL;  // in milliseconds
+
+Servo servo;
+unsigned long lastFeedTime = 0;
+
+void feederOpen() {
+  servo.write(0);
+  delay(175);
+  servo.write(90);
+}
+
+void feederClose() {
+  servo.write(180);
+  delay(175);
+  servo.write(90);
+}
+
 void setup() {
-  // put your setup code here, to run once:
   Serial.begin(9600);
-  Serial.println("Hello World!");
+  servo.attach(servoPin);
+  servo.write(90);  // Neutral position
+  lastFeedTime = millis();
+  Serial.println("System initialized");
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  unsigned long currentTime = millis();
 
+  if (currentTime - lastFeedTime >= FEED_INTERVAL) {
+    Serial.println("Feeding the pet :)");
+    feederOpen();
+    delay(150);
+    feederClose();
+    lastFeedTime = currentTime;
+  }
+
+  // Optional: Print waiting time
+  Serial.print("Waiting... ");
+  Serial.print((FEED_INTERVAL - (currentTime - lastFeedTime)) / 1000);
+  Serial.println(" seconds remaining");
+  
+  delay(1000);  // Reduce serial spamming
 }
 ```
 
