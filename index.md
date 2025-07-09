@@ -29,6 +29,14 @@ Leaving your pet at home for an extended period can be stressful especially when
 </div>
 
 
+# Second Milestone
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6yCgNUtyPdY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+## Summary
+After successfully completing the software setup for my project, I realized I needed a stable and organized platform for the hardware. Initially, I planned to create a custom 3D-printed holder using Onshape. However, I had realized that the idea just wasn't feasable. 3D printing lacked the durability and was very costly which wasn't what I wanted for this part. After brainstorming, I concluded that wood was a better alternative. Wood offered strength, ease of assembly, and flexibility for mounting all of my stuff. I glued the water bottle and servo to the main board and screwed in the Arduino. To complete the structure, I added three more wooden planks to form a sturdy frame. This resulted in a four-plank base attached with a total of 7 brackets that effectively supported the full hardware setup. With the physical assembly finished, I now can focus on enhancing the software and adding hardware modifications before I am done with my project.
+
 # First Milestone
 
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
