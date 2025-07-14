@@ -45,7 +45,7 @@ When I first decided to build an automatic pet feeder, I knew what I wanted it t
 
 
 # Code
-Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
+<!--Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs.-->
 
 ```c++
 #include <Servo.h>
@@ -98,8 +98,8 @@ void loop() {
 ```
 
 # Bill of Materials
-Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
-Don't forget to place the link of where to buy each component inside the quotation marks in the corresponding row after href =. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize this to your project needs. 
+<!--Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
+Don't forget to place the link of where to buy each component inside the quotation marks in the corresponding row after href =. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize this to your project needs.-->
 
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
@@ -115,11 +115,11 @@ Don't forget to place the link of where to buy each component inside the quotati
 I decided to make the Retro Arcade Console(RAC) for the starter project. The RAC has five unique games: 1. Tetris, 2. Snake, 3. Space encounters, 4. Space Invaders, and 5. Slot Machine. These five games can easily controlled by six easy buttons: up, down, left, right, return(exit the game), and fire(shooting for space invaders). If you are having trouble beating the game you're playing, no problem; with the other two buttons, you can easily choose any of the four remaining games in the convenience of being in your pocket.
 
 # Challenges
-While making my starter project I faced my fair share of problems the biggest challenges that had become aparent after starting was learning how to solder considering the fact that I had never learnt how to solder after learning the basics and a couple desolders I was able to adapt a decent method to solder easily after I was able to solder properly I soon ran into my next obstacle, which involved the instructions, unfortunatly for me I had trouble with the instuctions leading to some small issues with the screws and batteries. The last big struggle for the starter project was with the acrylic case which for my short nails to longer than I would like to admit to peel of the protective layer.
+While making my starter project I faced my  share of problems the biggest challenges that had become aparent after starting was learning how to solder considering the fact that I had never learnt how to solder after learning the basics and a couple desolders I was able to adapt a decent method to solder easily after I was able to solder properly I soon ran into my next obstacle, which involved the instructions, unfortunatly for me I had trouble with the instuctions leading to some small issues with the screws and batteries. The last big struggle for the starter project was with the acrylic case which for my short nails to longer than I would like to admit to peel of the protective layer.
 # Other Resources/Examples
-One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
+<!--One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
 - [Example 1](https://trashytuber.github.io/YimingJiaBlueStamp/)
 - [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
 - [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
 
-To watch the BSE tutorial on how to create a portfolio, click here.
+To watch the BSE tutorial on how to create a portfolio, click here.-->
