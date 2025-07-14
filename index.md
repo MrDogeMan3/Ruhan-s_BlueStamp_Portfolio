@@ -50,8 +50,8 @@ When I first decided to build an automatic pet feeder, I knew what I wanted it t
 ```c++
 #include <Servo.h>
 
-#define FEED_INTERVAL_MINUTES 5
-const byte servoPin = 9;
+#define FEED_INTERVAL_MINUTES .1
+const byte servoPin = 13;
 const unsigned long FEED_INTERVAL = FEED_INTERVAL_MINUTES * 60UL * 1000UL;  // in milliseconds
 
 Servo servo;
@@ -71,8 +71,9 @@ void feederClose() {
 
 void setup() {
   Serial.begin(9600);
-  servo.attach(servoPin);
-  servo.write(90);  // Neutral position
+  servo.setPeriodHertz(50);
+  servo.attach(servoPin, 500, 2400); // Min and max pulse width in microseconds
+  servo.write(90);
   lastFeedTime = millis();
   Serial.println("System initialized");
 }
@@ -81,7 +82,7 @@ void loop() {
   unsigned long currentTime = millis();
 
   if (currentTime - lastFeedTime >= FEED_INTERVAL) {
-    Serial.println("Feeding the pet :)");
+    Serial.println("Feeding Emma :D");
     feederOpen();
     delay(150);
     feederClose();
@@ -95,7 +96,7 @@ void loop() {
   
   delay(1000);  // Reduce serial spamming
 }
-```
+}
 
 # Bill of Materials
 <!--Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
