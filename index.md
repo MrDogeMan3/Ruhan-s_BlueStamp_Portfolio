@@ -89,7 +89,6 @@ void loop() {
     lastFeedTime = currentTime;
   }
 
-  // Optional: Print waiting time
   Serial.print("Waiting... ");
   Serial.print((FEED_INTERVAL - (currentTime - lastFeedTime)) / 1000);
   Serial.println(" seconds remaining");
@@ -117,10 +116,3 @@ I decided to make the Retro Arcade Console(RAC) for the starter project. The RAC
 
 # Challenges
 While making my starter project I faced my  share of problems the biggest challenges that had become aparent after starting was learning how to solder considering the fact that I had never learnt how to solder after learning the basics and a couple desolders I was able to adapt a decent method to solder easily after I was able to solder properly I soon ran into my next obstacle, which involved the instructions, unfortunatly for me I had trouble with the instuctions leading to some small issues with the screws and batteries. The last big struggle for the starter project was with the acrylic case which for my short nails to longer than I would like to admit to peel of the protective layer.
-<!--Other Resources/Examples
-One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
-- [Example 1](https://trashytuber.github.io/YimingJiaBlueStamp/)
-- [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
-- [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
-
-To watch the BSE tutorial on how to create a portfolio, click here.-->
