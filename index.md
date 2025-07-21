@@ -28,6 +28,29 @@ Leaving your pet at home for an extended period can be stressful especially when
   <img src="IMG_5093.jpg" width="400" height="500">
 </div>
 
+# Final Milestone
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/az72qlODCaQ?si=PFK4gkVayK0n753S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+In this milestone I switched my arduino uno with an ESP32 which is able to be connected to Wifi allowing it to be used in websites and being able to be triggered by a click of a button on my website.
+
+Figure 2: The figure above depicts how a IR break beam sensor works.
+
+Figure Reference: ZDSPB Tech
+
+The sensors now count all baskets made, and the score doesn’t go up by more than two anymore. I did this because initially my sensors were very sensitive because the delay was too short. Then my sensors weren’t sensitive enough because the delay was too long. I had to find the perfect median for my sensors to have the right kind of sensitivity. To find this perfect median, I followed a calibration routine.
+
+My calibration routine was:
+1. Check the score
+2. If it went up by more than 2, increase delay
+3. If it didn't sense, decrease delay
+4. Repeat steps 1-3
+![diagram](Blank diagram (2).png)
+
+Figure 3: The figure above shows my calibration routine.
+
+The biggest challenge I faced through this process was figuring out the code. It was very confusing to figure out what was wrong with the code because the developers of the project used the given code and it worked for them but not for me. My biggest triumph was figuring out what was wrong with the code. It was that I had to make a line of code that counted the score into a string. A string is an array of characters and incorporates a wide variety of data types. The other triumph was finding the perfect delay in the code to make the sensors the right sensitivity. In the future, I hope to learn more about computers and the ideas behind code.
+
 
 # Second Milestone
 
@@ -48,53 +71,127 @@ When I first decided to build an automatic pet feeder, I knew what I wanted it t
 <!--Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs.-->
 
 ```c++
-#include <Servo.h>
+#include "config.h"
+#include "AdafruitIO_WiFi.h"
+#include <WiFi.h>
+#include <ESP32Servo.h>
+#include <time.h>
 
-#define FEED_INTERVAL_MINUTES .1
-const byte servoPin = 13;
-const unsigned long FEED_INTERVAL = FEED_INTERVAL_MINUTES * 60UL * 1000UL;  // in milliseconds
+// Setup Adafruit IO client
+AdafruitIO_WiFi io(AIO_USERNAME, AIO_KEY, WIFI_SSID, WIFI_PASS);
 
+// Servo setup
 Servo servo;
+const int SERVO_PIN = 13;
+
+#define FEED_INTERVAL_MINUTES 10
+const unsigned long FEED_INTERVAL = FEED_INTERVAL_MINUTES * 60UL * 1000UL;
 unsigned long lastFeedTime = 0;
 
+// NTP Timezone Config
+const char* ntpServer1 = "pool.ntp.org";
+const char* ntpServer2 = "time.nist.gov";
+const char* timezone = "PST8PDT";  // Update as needed
+
+// Adafruit IO feeds
+AdafruitIO_Feed* feedNow = io.feed("feed-now");
+AdafruitIO_Feed* feedLog = io.feed("feed-log");
+
+int pos = 0;
+
 void feederOpen() {
-  servo.write(0);
-  delay(175);
-  servo.write(90);
+  for (pos = 0; pos <= 180; pos += 5) {
+    servo.write(pos);
+    delay(15);
+  }
+  Serial.println("Servo: Open");
 }
 
 void feederClose() {
-  servo.write(180);
-  delay(175);
-  servo.write(90);
+  for (pos = 180; pos >= 0; pos -= 5) {
+    delay(15);
+    servo.write(pos);
+  }
+  Serial.println("Servo: Close");
+}
+
+void handleFeedNow(AdafruitIO_Data* data) {
+  Serial.println("Emma fed Manually!");
+  feederOpen();
+  feederClose();
+
+  // Log time to Adafruit IO (cleaned up)
+  time_t now;
+  time(&now);
+  String timestamp = ctime(&now);
+  timestamp.trim();  // removes the trailing newline
+  feedLog->save(timestamp);
+  lastFeedTime = millis();
+}
+
+void connectToWiFi() {
+  WiFi.begin(WIFI_SSID, WIFI_PASS);
+  Serial.print("Connecting to WiFi");
+  while (WiFi.status() != WL_CONNECTED) {
+    Serial.print(".");
+    delay(500);
+  }
+  Serial.println("\nConnected! IP: ");
+  Serial.println(WiFi.localIP());
+}
+
+void configureTime() {
+  configTzTime(timezone, ntpServer1, ntpServer2);
+  struct tm timeinfo;
+  while (!getLocalTime(&timeinfo)) {
+    Serial.print(".");
+    delay(500);
+  }
+  Serial.println("\nTime synced!");
 }
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
+
   servo.setPeriodHertz(50);
-  servo.attach(servoPin, 500, 2400); // Min and max pulse width in microseconds
+  servo.attach(SERVO_PIN, 1000, 2000);
   servo.write(90);
+
+  connectToWiFi();
+  configureTime();
+
+  io.connect();
+  while (io.status() < AIO_CONNECTED) {
+    Serial.print(".");
+    delay(500);
+  }
+  Serial.println("\nConnected to Adafruit IO");
+
+  feedNow->onMessage(handleFeedNow);
   lastFeedTime = millis();
-  Serial.println("System initialized");
 }
 
 void loop() {
-  unsigned long currentTime = millis();
+  io.run();
 
+  unsigned long currentTime = millis();
   if (currentTime - lastFeedTime >= FEED_INTERVAL) {
-    Serial.println("Feeding Emma :D");
+    Serial.println("Emma fed Automatically!");
     feederOpen();
-    delay(150);
     feederClose();
+
+    time_t now;
+    time(&now);
+    String timestamp = ctime(&now);
+    timestamp.trim();  // Clean up newline
+    feedLog->save(timestamp);
+
     lastFeedTime = currentTime;
   }
 
-  Serial.print("Waiting... ");
-  Serial.print((FEED_INTERVAL - (currentTime - lastFeedTime)) / 1000);
-  Serial.println(" seconds remaining");
-  
-  delay(1000);  // Reduce serial spamming
+  delay(1000);
 }
+
 ```
 
 # Bill of Materials
