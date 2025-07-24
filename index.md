@@ -32,24 +32,26 @@ Leaving your pet at home for an extended period can be stressful especially when
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/az72qlODCaQ?si=PFK4gkVayK0n753S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-In this milestone I switched my arduino uno with an ESP32 which is able to be connected to Wifi allowing it to be used in websites and being able to be triggered by a click of a button on my website.
+#Overview
+In this milestone, I upgraded my system from an Arduino Uno to an ESP32, which allowed me to connect the project to Wi-Fi. This enabled web-based control — for example, I can now trigger actions like scoring or feeding directly from a website or mobile dashboard.
 
-Figure 2: The figure above depicts how a IR break beam sensor works.
 
-Figure Reference: ZDSPB Tech
+To fix the sensitivity issue, I implemented a calibration routine:
 
-The sensors now count all baskets made, and the score doesn’t go up by more than two anymore. I did this because initially my sensors were very sensitive because the delay was too short. Then my sensors weren’t sensitive enough because the delay was too long. I had to find the perfect median for my sensors to have the right kind of sensitivity. To find this perfect median, I followed a calibration routine.
+1. Check if the Monitor updated correctly.
+2. If it went up by more than 2, increase the delay (to reduce oversensitivity).
+3. If it didn’t register a score, decrease the delay (to make it more responsive).
+4. Repeat steps 1–3 until accurate detection was achieved.
 
-My calibration routine was:
-1. Check the score
-2. If it went up by more than 2, increase delay
-3. If it didn't sense, decrease delay
-4. Repeat steps 1-3
-![diagram](Blank diagram (2).png)
+#Challenge
+The hardest part of this milestone was debugging the code after switching to the ESP32. At first, nothing seemed to work — the code was confusing and the sensor wasn't detecting correctly. Eventually, I realized I had missed a critical step: adding my Wi-Fi credentials and Adafruit IO configuration.
 
-Figure 3: The figure above shows my calibration routine.
+#Outcome
+Once I fixed this, everything started to work. I was able to:
 
-The biggest challenge I faced through this process was figuring out the code. It was very confusing to figure out what was wrong with my code but I then realized I had to add the wifi infromation and 
+-Send sensor events to my online feed
+-Control the system remotely
+-Log data with timestamps
 
 
 # Second Milestone
