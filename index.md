@@ -224,8 +224,45 @@ Parts needed(THIS IS FOR BASIC PROJECT MODIFICATIONS NOT INCLUDED)
   7.Power source	1	USB or 5V adapter
 
 Step 1: Hardware Setup
+ 
   <img src="Screenshot 2025-07-25 at 1.28.13 PM.png" width="400" height="500">
 
+Servo Wire	Connects To Arduino
+Red --->	5V
+Brown --->	GND
+Orange --->	D9
+
+Use hot glue to attach the servo to the bottle, and connect a piece of cardboard (3d printing can also work but make sure the material is safe for your pet) to the horn of the servo so it blocks and unblocks the mouth.
+
+Step 2: Software Setup
+  1. Install Arduino IDE
+Download: https://www.arduino.cc/en/software
+  2.Install with all drivers checked (especially for USB)
+  3.Copy Paste code found above.
+
+Step 3: Uploading Code
+  
+  1. Connect Arduino Uno via USB
+  2. In Arduino IDE:
+    -Go to Tools > Board → Select Arduino Uno
+    -Go to Tools > Port → Choose correct COM port
+  3. Click the Upload arrow
+
+Step 4: Assembly
+  
+  1. Cut a hole in the side of the bottle for the food to drop out.
+  2. Glue the servo to the bottle near that opening.
+  3. Attach a cardboard flap to the servo horn — it should rotate to block or unblock the hole.
+  4. Place the bottle over your pet’s bowl so food drops directly into it.
+
+With that you are done with your project but there are some possible modifications you may want to add.
+
+Possible Modificartions:
+  
+  1. Replace your arduino uno with a ESP32 so you can connect it to your adafruit dashboard.
+  2. Add RTC (Real-Time Clock) module for better time accuracy and change code to 24 hour feeding system.
+  3. Add a weight sensor to monitor when your pet is actually eating their food.
+  4. Add a display (LED) and ultra sonic sensor to tell the levels of your food.
 
 
 # My Starter Project - Retro Arcade Console
