@@ -1,5 +1,6 @@
 # Automatic Pet Feeder
 Leaving your pet at home for an extended period can be stressful especially when it comes to your feeding them. This simple system yet effective system provides a solution by automatically dispensing food at scheduled intervals, keeping your pet well-fed and happy no matter where you are. It’s a very practical and affordable way to give your pet the care they need even without you being there.
+(Scroll to the bottom for instructions.)
 
 <div>
   <table style="margin: 0 auto;">
@@ -209,6 +210,23 @@ Don't forget to place the link of where to buy each component inside the quotati
 | 12x12 wood planks | Frame of the weight senor | $7.99 for 5 | <a href="[https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/](https://www.amazon.com/Plywood-Basswood-Unfinished-Cutting-Engraving/dp/B0D491GJ5T/ref=sr_1_7?sr=8-7)"> Link </a> |
 | Male-Male Wires | Connecting my breadboard to my microcontrollers. | $3.99 for 40 | <a href="[https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/](https://www.amazon.com/California-JOS-Breadboard-Optional-Multicolored/dp/B0BRTJQZRD/ref=sr_1_3?sr=8-3)"> Link </a> |
 | Total Price | --Not Including Tax-- | $52.64 | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+
+#Instructions
+Automatic Arduino Pet Feeder – Step-by-Step Guide
+
+Parts needed(THIS IS FOR BASIC PROJECT MODIFICATIONS NOT INCLUDED)
+  1.Arduino Uno	1	Or any compatible board (e.g. Nano)
+  2.Servo Motor (SG90 or MG90S)	1	Controls the dispenser
+  3.Plastic Bottle	1	For food reservoir
+  4.Cardboard piece	1	Acts as a flap to open/close
+  5.Jumper Wires	~5	Male-to-female or male-to-male
+  6.Hot glue / Tape	1	To attach components
+  7.Power source	1	USB or 5V adapter
+
+Step 1: Hardware SetupHow It Works
+A servo motor rotates a cardboard flap that opens the bottle mouth for a short time to release food.
+
+
 
 # My Starter Project - Retro Arcade Console
 <iframe width="560" height="315" src="https://www.youtube.com/embed/js7R6Dc6IFs?si=QcVjojFgPuVrgVKV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
