@@ -223,8 +223,8 @@ Parts needed(THIS IS FOR BASIC PROJECT MODIFICATIONS NOT INCLUDED)
   6.Hot glue / Tape	1	To attach components
   7.Power source	1	USB or 5V adapter
 
-Step 1: Hardware SetupHow It Works
-A servo motor rotates a cardboard flap that opens the bottle mouth for a short time to release food.
+Step 1: Hardware Setup
+  <img src="Screenshot 2025-07-25 at 1.28.13 PM.png" width="400" height="500">
 
 
 
