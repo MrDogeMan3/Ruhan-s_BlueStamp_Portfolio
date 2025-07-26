@@ -217,16 +217,22 @@ Automatic Arduino Pet Feeder – Step-by-Step Guide
 Parts needed(THIS IS FOR BASIC PROJECT MODIFICATIONS NOT INCLUDED)
   
   1.Arduino Uno	1	Or any compatible board (e.g. Nano)
+  
   2.Servo Motor (SG90 or MG90S)	1	Controls the dispenser
+  
   3.Plastic Bottle	1	For food reservoir
+  
   4.Cardboard piece	1	Acts as a flap to open/close
+  
   5.Jumper Wires	~5	Male-to-female or male-to-male
+  
   6.Hot glue / Tape	1	To attach components
+  
   7.Power source	1	USB or 5V adapter
 
 Step 1: Hardware Setup
  
-  <img src="Screenshot 2025-07-25 at 1.28.13 PM.png" width="400" height="500">
+  <img src="Screenshot 2025-07-25 at 1.28.13 PM.png" width="550" height="315">
 
 Servo Wire	Connects To Arduino
 Red --->	5V
