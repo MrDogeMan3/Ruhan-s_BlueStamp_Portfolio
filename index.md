@@ -273,7 +273,7 @@ Possible Modificartions:
 
 
 # My Starter Project - Retro Arcade Console
-<iframe width="315" height="550" src="https://www.youtube.com/embed/js7R6Dc6IFs?si=QcVjojFgPuVrgVKV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="550" height="315" src="https://www.youtube.com/embed/js7R6Dc6IFs?si=QcVjojFgPuVrgVKV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 I decided to make the Retro Arcade Console(RAC) for the starter project. The RAC has five unique games: 1. Tetris, 2. Snake, 3. Space encounters, 4. Space Invaders, and 5. Slot Machine. These five games can easily controlled by six easy buttons: up, down, left, right, return(exit the game), and fire(shooting for space invaders). If you are having trouble beating the game you're playing, no problem; with the other two buttons, you can easily choose any of the four remaining games in the convenience of being in your pocket.
 
